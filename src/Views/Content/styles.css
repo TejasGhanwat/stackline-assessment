@@ -1,0 +1,4 @@
+.sta-content-wrapper{
+    display: flex;
+    flex-direction: row;
+}
