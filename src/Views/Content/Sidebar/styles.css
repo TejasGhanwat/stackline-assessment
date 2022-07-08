@@ -1,5 +1,10 @@
 .sta-sidebar {
     display: flex;
-    flex: 3;
-    align-items: center;
+    flex: 2;
+    box-shadow: 2px 2px 2px 2px rgb(230, 230, 230);
+    height: 800px;
+    padding: 30px 0px;
+    justify-content: center;
+    margin: 20px;
+    background-color: white;
 }

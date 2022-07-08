@@ -12,9 +12,11 @@ function Content() {
   useEffect(()=>{
       setProductData(data)
   }, [])
+
+  console.log(data)
     return (
         <div className="sta-content-wrapper">
-            <Sidebar />
+            <Sidebar data={data}/>
             <RightContent />
         </div>
     );
