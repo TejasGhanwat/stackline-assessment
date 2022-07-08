@@ -1,9 +1,10 @@
-import React from 'react';
 import ProductDetails from '../../../components/ProductDetails';
-function Sidebar() {
+import './styles.css'
+
+function Sidebar(props: any) {
     return (
         <div className= "sta-sidebar">
-            <ProductDetails />
+            <ProductDetails data={props.data}/>
         </div>
     );
 }
