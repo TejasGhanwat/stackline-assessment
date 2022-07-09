@@ -1,5 +1,6 @@
 import ProductDetails from '../../../components/ProductDetails';
 import './styles.css'
+import React from 'react';
 
 function Sidebar(props: any) {
     return (

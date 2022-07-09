@@ -7,17 +7,12 @@ import './styles.css'
 
 function Content() {
 
-    const [productData, setProductData] = useState<PRODUCT[]>([]) 
+    const [productData, setProductData] = useState<PRODUCT[]>([...data]) 
 
-  useEffect(()=>{
-      setProductData(data)
-  }, [])
-
-  console.log(data)
     return (
         <div className="sta-content-wrapper">
-            <Sidebar data={data}/>
-            <RightContent />
+            <Sidebar data={productData}/>
+            <RightContent sales={productData[0].sales}/>
         </div>
     );
 }

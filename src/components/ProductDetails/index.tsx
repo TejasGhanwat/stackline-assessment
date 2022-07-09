@@ -1,9 +1,9 @@
+import React from 'react';
 import './styles.css'
 
 function ProductDetails(props:any) {
     const {data} = props;
     const productData = data[0]
-
 
     return (
         <div className= 'sta-product-details-wrapper'>
