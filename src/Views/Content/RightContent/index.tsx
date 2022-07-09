@@ -7,7 +7,7 @@ function RightContent(props:any) {
     return (
         <div className='sta-right-content'>
            <Graph sales = {props.sales}/>
-           <Table />
+           <Table sales = {props.sales}/>
         </div>
     );
 }

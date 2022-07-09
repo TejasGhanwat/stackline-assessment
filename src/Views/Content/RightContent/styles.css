@@ -5,4 +5,5 @@
     height: 800px;
     margin:20px 0px;
     background-color: rgb(235, 239, 242);
+    align-content: space-between;
 }

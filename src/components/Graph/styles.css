@@ -5,6 +5,9 @@
     height: 400px;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 1300px;
 }
 
 .sta-graph{
