@@ -1,11 +1,12 @@
 import Graph from '../../../components/Graph'
 import Table from '../../../components/Table'
 import './styles.css'
+import React from 'react';
 
-function RightContent() {
+function RightContent(props:any) {
     return (
         <div className='sta-right-content'>
-           <Graph />
+           <Graph sales = {props.sales}/>
            <Table />
         </div>
     );
