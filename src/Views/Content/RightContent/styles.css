@@ -1,9 +1,9 @@
 .sta-right-content {
-    display: flex;
-    flex: 4;
-    flex-direction: column;
-    height: 800px;
-    margin:20px 0px;
-    background-color: rgb(235, 239, 242);
-    align-content: space-between;
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  height: 800px;
+  margin: 20px 0px;
+  background-color: rgb(235, 239, 242);
+  align-content: space-between;
 }

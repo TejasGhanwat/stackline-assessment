@@ -1,47 +1,40 @@
-import React, {useMemo} from 'react';
-import './styles.css'
-import Table from './Table'
+import React, { useMemo } from "react";
+import "./styles.css";
+import Table from "./Table";
 
-function index(props:any) {
+function index(props: any) {
+  const { sales } = props;
+  const columns = useMemo(
+    () => [
+      {
+        Header: "WEEK ENDING",
+        accessor: "weekEnding",
+      },
+      {
+        Header: "RETAIL SALES",
+        accessor: "retailSales",
+      },
+      {
+        Header: "WHOLESALE SALES",
+        accessor: "wholesaleSales",
+      },
+      {
+        Header: "UNITS SOLD",
+        accessor: "unitsSold",
+      },
+      {
+        Header: "RETAILER MARGIN",
+        accessor: "retailerMargin",
+      },
+    ],
+    []
+  );
 
-    const {sales} = props
-    const columns = useMemo(
-        () => [
-          {
-            // first group - TV Show
-            Header: "WEEK ENDING",
-            accessor: "weekEnding"
-          },
-          {
-            // first group - TV Show
-            Header: "RETAIL SALES",
-            accessor: "retailSales"
-          },
-          {
-            // first group - TV Show
-            Header: "WHOLESALE SALES",
-            accessor: "wholesaleSales"
-          },
-          {
-            // first group - TV Show
-            Header: "UNITS SOLD",
-            accessor: "unitsSold"
-          },
-          {
-            // first group - TV Show
-            Header: "RETAILER MARGIN",
-            accessor: "retailerMargin"
-          },
-        ],
-        []
-      );    
-
-    console.log(sales)
-    return (
-        <div className="sta-table-wrapper">
-            <Table columns={columns} data={sales} />
-        </div>
-    );
+  return (
+    <div className='sta-table-wrapper'>
+      <Table columns={columns} data={sales} />
+    </div>
+  );
 }
 
 export default index;
