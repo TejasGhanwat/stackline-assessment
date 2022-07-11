@@ -1,20 +1,18 @@
-import React, {useState, useEffect} from 'react';
-import { PRODUCT } from '../../Interfaces/product';
-import data from '../../data/stackline_frontend_assessment_data_2021.json'
-import RightContent from './RightContent';
-import Sidebar from './Sidebar';
-import './styles.css'
+import React from "react";
+import RightContent from "./RightContent";
+import Sidebar from "./Sidebar";
+import { useSelector } from "react-redux";
+import "./styles.css";
 
 function Content() {
+  const data = useSelector((state: any) => state.dataReducer.data);
 
-    const [productData, setProductData] = useState<PRODUCT[]>([...data]) 
-
-    return (
-        <div className="sta-content-wrapper">
-            <Sidebar data={productData}/>
-            <RightContent sales={productData[0].sales}/>
-        </div>
-    );
+  return (
+    <div className='sta-content-wrapper'>
+      <Sidebar data={data} />
+      <RightContent sales={data[0].sales} />
+    </div>
+  );
 }
 
 export default Content;

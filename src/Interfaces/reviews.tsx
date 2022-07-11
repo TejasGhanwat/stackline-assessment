@@ -1,5 +1,5 @@
 export interface REVIEWS {
-    customer: string,
-    review: string,
-    score: number
+  customer: string;
+  review: string;
+  score: number;
 }
